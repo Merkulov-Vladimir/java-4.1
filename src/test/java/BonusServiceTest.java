@@ -33,7 +33,7 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
-    //мои методы
+
     @org.junit.jupiter.api.Test
     void shouldCalculateForNotRegisteredAndOverLimit() { //незарегистрированный больше лимита
         BonusService service = new BonusService();
@@ -49,6 +49,7 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
+
     // второй
     @org.junit.jupiter.api.Test
     void shouldCalculateForNotRegisteredAndUnderLimit() { // незарегистрированный меньше лимита
